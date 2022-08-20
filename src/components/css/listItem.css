@@ -1,0 +1,85 @@
+.todoItem {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid rgb(233, 233, 233);
+  position: relative;
+  width: 100%;
+  transition: all 2s;
+  height: 6.5rem;
+}
+
+.todoItem:hover > .deleteTodo {
+  display: block;
+}
+
+.todoItem:hover > .deleteTodo:hover {
+  color: rgba(175, 47, 47, 0.6);
+}
+
+#todoItem__text {
+  padding: 1.5rem 1.5rem;
+  line-height: 1.2;
+  font-size: 2.5rem;
+  width: calc(83% - 30px);
+  text-align: left;
+  padding-left: 2.5rem;
+  margin-left: 20px;
+  word-wrap: break-word;
+}
+
+.editText {
+  padding: 1.5rem 1.5rem;
+  line-height: 1.2;
+  font-size: 2.5rem;
+  width: 45.8rem;
+  margin-left: 30px;
+  transition: all 0.5s ease-in-out;
+}
+
+.editText + .checkbox {
+  display: none;
+}
+
+.deleteTodo {
+  display: none;
+  border: 0;
+  background-color: #fff;
+  color: rgba(175, 47, 47, 0.4);
+  font-size: 1.8rem;
+  margin-right: 1.5rem;
+}
+
+.todoItem--checked {
+  text-decoration: line-through;
+  color: #ccc;
+  transition: all 0.5s ease-in-out;
+}
+
+/* start css for checkbox */
+
+label {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 30px;
+  left: 6px;
+  position: absolute;
+  top: 5;
+  width: 30px;
+}
+
+input[type="checkbox"] {
+  visibility: hidden;
+}
+
+input[type="checkbox"]:checked + label {
+  border: 1px solid #ccc;
+  background: url(../../images/tick.png);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
+/* end css for checkbox */

@@ -1,0 +1,41 @@
+.filtertodo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 20%), 0 8px 0 -3px #F6F6F6, 0 9px 1px -3px rgb(0 0 0 / 20%), 0 16px 0 -6px #F6F6F6, 0 17px 2px -6px rgb(0 0 0 / 20%);
+}
+
+.totalItems {
+  color: #777;
+  font-size: 1.4rem;
+}
+
+.primaryBtn {
+  margin: 3px;
+  padding: 3px 7px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  font-size: 1.4rem;
+  color: #777;
+  cursor: pointer;
+}
+
+.todoBtn__border {
+  border: 1px solid #e6e6e6;
+}
+
+.hideClearCompletedBtn {
+  visibility: hidden;
+}
+
+.showClearCompletedBtn {
+  visibility: visible;
+}
+
+.showClearCompletedBtn:hover {
+  text-decoration: underline;
+}
